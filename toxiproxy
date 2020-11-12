@@ -1,0 +1,23 @@
+Using toxyproxy rest api examples
+
+
+GET http://localhost:8474/proxies/rabbittoxi
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-12T075019.200.json
+<> 2020-11-12T075000.200.json
+
+###
+
+POST http://localhost:8474/proxies/rabbittoxi/toxics
+Accept: */*
+Cache-Control: no-cache
+
+{"type":"latency", "attributes": {"latency":10000}}
+
+###
+
+DELETE http://localhost:8474/proxies/rabbittoxi/toxics/latency_downstream
+Accept: */*
+Cache-Control: no-cache
